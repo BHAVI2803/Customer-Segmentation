@@ -24,55 +24,60 @@ this application is going to study the behavioural information of the customer b
 
 **the ML pipeline**
 
-1.  Data Preprocessing(EDA) 1.1 Data Wrangling
-
+1.  Data Preprocessing(EDA) 
+    1.1 Data Wrangling
     1.2 Data Analysis
 
-1.  Model Building
-1.  Model Deployment
+2.  Model Building
+3.  Model Deployment
 
 
 
-In [1]: 1 *\#importing libraries*
+*\#importing libraries*
 
--   ​
--   **import** pandas **as** pd
+**import** pandas **as** pd
 
-4 **import** numpy **as** np
+**import** numpy **as** np
 
-5 **import** nums_from_string
+**import** nums_from_string
 
-6 **import** re
+**import** re
 
-7 **import** datetime
+**import** datetime
 
-8 **import** calendar
-
-9 **from** sklearn **import** metrics
-
-1.  ​
-1.  **from** wordcloud **import** WordCloud, STOPWORDS, ImageColorGenerator
-1.  **import** matplotlib.pyplot **as** plt
-1.  **import** seaborn **as** sns
-1.  **%**matplotlib inline
-1.  sns.set_style('darkgrid')
-1.  sns.set_palette('Set2')
-1.  sns.set_context("notebook",font_scale**=**1)
-1.  ​
-1.  ​
-1.  *\# library for warning ignorance*
-1.  **import** warnings
-1.  warnings.filterwarnings('ignore')
-1.  ​
-1.  *\# start of the execution time*
-1.  **import** time
-1.  start_time **=** time.time()
+**import** calendar
 
 
+**from** sklearn **import** metrics
 
-In [2]:
+**from** wordcloud **import** WordCloud, STOPWORDS, ImageColorGenerator
 
-Out[2]:
+**import** matplotlib.pyplot **as** plt
+
+**import** seaborn **as** sns
+
+**%**matplotlib inline
+
+sns.set_style('darkgrid')
+
+sns.set_palette('Set2')
+
+sns.set_context("notebook",font_scale**=**1)
+
+
+*\# library for warning ignorance*
+
+**import** warnings
+
+warnings.filterwarnings('ignore')
+
+
+*\# start of the execution time*
+**import** time
+
+start_time **=** time.time()
+
+
 
 *\# reading the dataset*
 
@@ -100,14 +105,14 @@ cust_df
 **1. Data preprocessing(EDA)**
 
 
-In [3]: *\# checking the shape*
+ *\# checking the shape*
 
 cust_df.shape
 
-Out[3]: (541909, 8)
+Output: (541909, 8)
 
 
-In [4]: *\# checking the dataframe information*
+*\# checking the dataframe information*
 
 cust_df.info()
 
